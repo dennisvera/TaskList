@@ -6,7 +6,10 @@
 //  Copyright © 2020 Dennis Vera. All rights reserved.
 //
 
-struct Task {
+import Foundation
+
+struct Task: Identifiable {
+  let id = UUID()
   var name: String
   var completed = false
 }

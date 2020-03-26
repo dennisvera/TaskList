@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+  var taskStore = TaskStore()
+
+  var body: some View {
+    List(taskStore.tasks) { task in
+      Text(task.name)
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
