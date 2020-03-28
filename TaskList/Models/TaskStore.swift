@@ -6,9 +6,11 @@
 //  Copyright © 2020 Dennis Vera. All rights reserved.
 //
 
-class TaskStore {
+import Combine
 
-  var tasks = [
+class TaskStore: ObservableObject {
+
+  @Published var tasks = [
     "Task number 1",
     "Task number 2",
     "Task number 3",
