@@ -11,12 +11,12 @@ import SwiftUI
 struct ContentView: View {
   @ObservedObject var taskStore: TaskStore
   @State var modalIsPresented = false
-  
+
   var body: some View {
     NavigationView {
       List {
-        ForEach(taskStore.tasks) { task in
-          Text(task.name)
+        ForEach(taskStore.tasks) { index in
+          RowView(task: self.$taskStore.tasks[index])
         }
         .onMove { sourceIndices, destinationIndex in
           self.taskStore.tasks.move(
@@ -46,6 +46,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-      ContentView(taskStore: TaskStore() )
+      ContentView(taskStore: TaskStore())
     }
 }

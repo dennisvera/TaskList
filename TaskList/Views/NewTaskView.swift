@@ -12,7 +12,6 @@ struct NewTaskView: View {
   var taskStore: TaskStore
 
   @Environment(\.presentationMode) var presentationMode
-  
   @State var text = ""
 
   var body: some View {
