@@ -20,6 +20,10 @@
 		39C3BAB4242FD5C600CE77FB /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BAB3242FD5C600CE77FB /* TaskEditingView.swift */; };
 		39C3BAB8242FD82400CE77FB /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BAB6242FD82400CE77FB /* IndexedCollection.swift */; };
 		39C3BAB9242FD82400CE77FB /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BAB7242FD82400CE77FB /* ForEach.swift */; };
+		39C3BABB242FDFF500CE77FB /* Task.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BABA242FDFF500CE77FB /* Task.Priority.swift */; };
+		39C3BABD242FE07200CE77FB /* TaskStore.PrioritizedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BABC242FE07200CE77FB /* TaskStore.PrioritizedTask.swift */; };
+		39C3BABF242FE60C00CE77FB /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BABE242FE60C00CE77FB /* SectionView.swift */; };
+		39C3BAC1242FF4A300CE77FB /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3BAC0242FF4A300CE77FB /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		39C3BAB3242FD5C600CE77FB /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
 		39C3BAB6242FD82400CE77FB /* IndexedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
 		39C3BAB7242FD82400CE77FB /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		39C3BABA242FDFF500CE77FB /* Task.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.Priority.swift; sourceTree = "<group>"; };
+		39C3BABC242FE07200CE77FB /* TaskStore.PrioritizedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTask.swift; sourceTree = "<group>"; };
+		39C3BABE242FE60C00CE77FB /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		39C3BAC0242FF4A300CE77FB /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				39A20450242D5C63006706D5 /* Tasks.swift */,
+				39C3BABA242FDFF500CE77FB /* Task.Priority.swift */,
 				39A20455242D5D3D006706D5 /* TaskStore.swift */,
+				39C3BABC242FE07200CE77FB /* TaskStore.PrioritizedTask.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +133,7 @@
 				39A20457242D9DD0006706D5 /* NewTaskView.swift */,
 				39C3BAB1242FCBC900CE77FB /* RowView.swift */,
 				39C3BAB3242FD5C600CE77FB /* TaskEditingView.swift */,
+				39C3BABE242FE60C00CE77FB /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +143,7 @@
 			children = (
 				39C3BAB7242FD82400CE77FB /* ForEach.swift */,
 				39C3BAB6242FD82400CE77FB /* IndexedCollection.swift */,
+				39C3BAC0242FF4A300CE77FB /* Binding.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,12 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C3BABD242FE07200CE77FB /* TaskStore.PrioritizedTask.swift in Sources */,
 				39A20456242D5D3E006706D5 /* TaskStore.swift in Sources */,
 				39A20451242D5C63006706D5 /* Tasks.swift in Sources */,
+				39C3BAC1242FF4A300CE77FB /* Binding.swift in Sources */,
 				39C3BAB8242FD82400CE77FB /* IndexedCollection.swift in Sources */,
 				39C3BAB4242FD5C600CE77FB /* TaskEditingView.swift in Sources */,
 				39C3BAB2242FCBC900CE77FB /* RowView.swift in Sources */,
 				39A20458242D9DD0006706D5 /* NewTaskView.swift in Sources */,
+				39C3BABB242FDFF500CE77FB /* Task.Priority.swift in Sources */,
+				39C3BABF242FE60C00CE77FB /* SectionView.swift in Sources */,
 				39A2043D242D5892006706D5 /* AppDelegate.swift in Sources */,
 				39A2043F242D5892006706D5 /* SceneDelegate.swift in Sources */,
 				39C3BAB9242FD82400CE77FB /* ForEach.swift in Sources */,
